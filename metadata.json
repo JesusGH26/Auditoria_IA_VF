@@ -1,0 +1,5 @@
+{
+  "name": "Auditoria IA",
+  "description": "Herramienta de auditoría de seguridad informática impulsada por IA. Analiza planes de seguridad, detecta vulnerabilidades y genera informes de cumplimiento (ISO 27001/NIST).",
+  "requestFramePermissions": []
+}
