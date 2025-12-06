@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  AlertTriangle, 
   CheckCircle2, 
   ShieldAlert, 
   Target, 
@@ -112,7 +111,7 @@ const AuditReportView: React.FC<AuditReportViewProps> = ({ report, onReset }) =>
                 dataKey="value"
                 stroke="none"
               >
-                {chartData.map((entry, index) => (
+                {chartData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index]} />
                 ))}
               </Pie>
