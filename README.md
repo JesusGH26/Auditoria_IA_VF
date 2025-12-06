@@ -1,10 +1,10 @@
-# 🛡️ Auditoria IA - Sistema de Evaluación de Seguridad
+# Auditoria IA - Sistema de Evaluación de Seguridad
 
-**Auditoria IA** es una plataforma web inteligente diseñada para analizar, auditar y puntuar Planes de Seguridad Informática automáticamente. Utilizando **Inteligencia Artificial Generativa (Google Gemini 2.5)** y almacenamiento en la nube (**Supabase**), el sistema simula el juicio de un experto en ciberseguridad bajo normativas ISO 27001 y NIST.
+**Auditoria IA** es una plataforma web inteligente diseñada para analizar, auditar y puntuar Planes de Seguridad Informática automáticamente. Utilizando **Inteligencia Artificial Generativa (Google Gemini)** y almacenamiento en la nube (**Supabase**), el sistema simula el juicio de un experto en ciberseguridad bajo normativas ISO 27001 y NIST.
 
 ---
 
-## 🎯 1. Definición y Objetivos
+## 1. Definición y Objetivos
 
 *   **Objetivo Principal:** Automatizar la revisión de documentos técnicos de seguridad, reduciendo el tiempo de auditoría de horas a segundos.
 *   **Innovación:** Implementación de un modelo de lenguaje (LLM) con capacidad de razonamiento contextual (Modo Universitario vs. Modo Empresarial).
@@ -12,7 +12,7 @@
 
 ---
 
-## 🛠️ 2. Materiales y Stack Tecnológico
+## 2. Materiales y Stack Tecnológico
 
 El proyecto se construye sobre una arquitectura 100% Serverless y en la nube.
 
@@ -27,31 +27,7 @@ El proyecto se construye sobre una arquitectura 100% Serverless y en la nube.
 
 ---
 
-## 🏗️ 3. Arquitectura del Sistema (Diagrama Lógico)
-
-El flujo de datos sigue un esquema lineal seguro:
-
-```mermaid
-[Usuario] -> (Sube PDF/Texto) -> [Frontend React]
-                                      |
-                                      v
-                             [Procesamiento de Datos]
-                             (Limpieza y Conversión Base64)
-                                      |
-                                      v
-      [Google Gemini API] <--- (Inferencia del Modelo ML)
-            |
-            v
-    (Predicción/Reporte JSON) -> [Frontend React] -> [Visualización Reporte]
-                                            |
-                                            v
-                                   [Supabase Cloud DB]
-                                   (Almacenamiento Persistente)
-```
-
----
-
-## 🧠 4. Desarrollo del Modelo de IA (Machine Learning)
+## 3. Desarrollo del Modelo de IA (Machine Learning)
 
 Este proyecto utiliza el estado del arte en Procesamiento de Lenguaje Natural (NLP). A continuación se detalla el cumplimiento técnico:
 
@@ -74,7 +50,7 @@ En lugar de un entrenamiento tradicional (backpropagation), se utiliza **Few-Sho
 
 ---
 
-## 💾 5. Base de Datos (Estructura)
+## 4. Base de Datos (Estructura)
 
 El sistema cumple con el almacenamiento estructurado utilizando una tabla relacional en PostgreSQL (Supabase):
 
@@ -90,11 +66,11 @@ El sistema cumple con el almacenamiento estructurado utilizando una tabla relaci
 
 ---
 
-## 🚀 6. Guía de Instalación y Uso
+## 5. Guía de Instalación y Uso
 
 ### Requisitos Previos
 *   Node.js v18+ instalado.
-*   Cuenta en Google AI Studio (para API Key).
+*   Cuenta en Google Cloud (para API Key).
 *   Cuenta en Supabase (para Base de Datos).
 
 ### Pasos de Instalación
@@ -132,7 +108,7 @@ El sistema cumple con el almacenamiento estructurado utilizando una tabla relaci
 
 ---
 
-## 🧪 7. Pruebas y Validación
+## 6. Pruebas y Validación
 
 *   **Validación de Entrada:** El sistema bloquea archivos que no sean PDF y textos demasiado cortos.
 *   **Manejo de Errores:** Se capturan errores de API (403, 429) y se muestran mensajes amigables al usuario.
