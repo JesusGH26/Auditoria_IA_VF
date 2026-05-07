@@ -100,7 +100,7 @@ export const analyzeSecurityPlan = async (input: AuditInputData): Promise<AuditR
   const ai = new GoogleGenAI({ apiKey: apiKey });
 
   try {
-    const modelId = "gemini-1.5-flash"; 
+    const modelId = "gemini-2.5-flash"; 
     
     // Configuración del contexto
     let contextInstruction = "";
